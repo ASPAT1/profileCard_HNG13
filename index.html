@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="profilecard.css">
+</head>
+<body>
+  <article data-testid="test-user-card">
+    <figure>
+      <img src="assets/ME.jpg" 
+           alt="Ayeni Phillip"
+           data-testid="test-user-avatar" />
+    </figure>
+    <header>
+      <h2 data-testid="test-user-name">Ayeni Phillip</h2>
+      <h4 data-testid="test-user-role">Frontend Developer</h4>
+
+      <p class="bio" data-testid="test-user-bio">Ayeni Phillip | Passionate about tech, research, and people. I build relationships and explore new ideas. Let's connect!</p>
+    </header>
+
+    <p data-testid="test-user-time"></p>
+
+    <nav data-testid="test-user-social-links" aria-label="Social Media Links">
+      <ul>
+        <li><a href="https:x.com/ayenitunji?t=Qqilk_Ky-nZSnSFM_CtqQ&s=09" target="_blank" data-testid="test-user-social-X"><img src="/assets/logo-white.png" alt="X logo" style="width: 2rem; height: 2rem;"></a></li>
+        <li><a href="https://www.linkedin.com/in/ayeni-phillip-adetunji/" target="_blank" data-testid="test-user-social-linkedin"><img src="/assets/InBug-White.png" alt="linkedin logo" style="width: 2rem; height: 2rem;"></a></li>
+        <li><a href="https://github.com/ASPAT1" target="_blank" data-testid="test-user-social-github"><img src="/assets/github-mark-white.png" alt="github logo" style="width: 2rem; height: 2rem;"></a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="hobbies-heading">
+      <h3 id="MY-hobbies">Hobbies</h3>
+      <ul data-testid="test-user-hobbies">
+        <li>Making research</li>
+        <li>Reading</li>
+        <li>Traveling</li>
+        <li>Football</li>
+        <li>Brain Teaser</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="dislikes-heading">
+      <h3 id="dislikes-heading">Dislikes</h3>
+      <ul data-testid="test-user-dislikes">
+        <li>Distrust</li>
+        <li>Frustration</li>
+        <li>Laziness</li>
+        <li>Demoralization</li>
+      </ul>
+    </section>
+  </article>
+
+  <script>
+    const timeElement = document.querySelector('[data-testid="test-user-time"]');
+    timeElement.textContent = `Date: ${(new Date).toLocaleDateString()} (${Date.now()} ms)`;
+  </script>
+</body>
+</html>
