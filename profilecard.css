@@ -18,6 +18,19 @@
       margin: 5rem 0;
     }
 
+    .model{
+      display: flex;
+      list-style-type: none;
+      gap: 1rem;
+      font-weight: 400;
+      padding-left: 180px;
+    }
+
+    nav li{
+      padding-bottom: 2rem;
+      font-size: 20px;
+    }
+
     article {
       background: var(--card-bg);
       border-radius: 16px;

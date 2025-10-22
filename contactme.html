@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+ <link rel="stylesheet" href="contactme.css">
+</head>
+<body>
+  <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" novalidate>
+
+        <label for="name">Full Name</label>
+      <input type="text" id="name" data-testid="test-contact-name" aria-describedby="error-name" required>
+      <div id="error-name" class="error" data-testid="test-contact-error-name"></div>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" data-testid="test-contact-email" aria-describedby="error-email" required>
+      <div id="error-email" class="error" data-testid="test-contact-error-email"></div>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" data-testid="test-contact-subject" aria-describedby="error-subject" required>
+      <div id="error-subject" class="error" data-testid="test-contact-error-subject"></div>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" data-testid="test-contact-message" aria-describedby="error-message" required></textarea>
+      <div id="error-message" class="error" data-testid="test-contact-error-message"></div>
+
+      <button type="submit" data-testid="test-contact-submit">Send Message</button>
+      <div id="success" class="success" data-testid="test-contact-success"></div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const successMsg = document.getElementById('success');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      document.querySelectorAll('.error').forEach(el => el.textContent = '');
+      successMsg.textContent = '';
+
+      let valid = true;
+
+
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const subject = document.getElementById('subject');
+      const message = document.getElementById('message');
+
+      if (name.value.trim() === '') {
+        document.getElementById('error-name').textContent = 'Full name is required.';
+        valid = false;
+      }
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.value.match(emailPattern)) {
+        document.getElementById('error-email').textContent = 'Enter a valid email (name@example.com).';
+        valid = false;
+      }
+
+      if (subject.value.trim() === '') {
+        document.getElementById('error-subject').textContent = 'Subject is required.';
+        valid = false;
+      }
+
+      if (message.value.trim().length < 10) {
+        document.getElementById('error-message').textContent = 'Message must be at least 10 characters.';
+        valid = false;
+      }
+
+
+      if (valid) {
+        successMsg.textContent = '✅ Regards! Your message has been sent successfully.';
+        form.reset();
+      }
+    });
+  </script>
+</body>
+</html>

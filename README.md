@@ -1,11 +1,11 @@
-# 🌟 Profile Card Project
+# Profile Card Project
 
 A simple, elegant, and responsive **Profile Card** built using **semantic HTML5**, **CSS3**, and a bit of **vanilla JavaScript**.  
 This project showcases a personal profile section with a photo, social links, hobbies, and dislikes — perfect for personal portfolios, resume sites, or introductory pages.
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 This project demonstrates:
 - Use of **semantic HTML elements** (`article`, `header`, `section`, `figure`, `nav`) for accessibility and structure.  
@@ -16,7 +16,7 @@ This project demonstrates:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 project-folder/
@@ -33,7 +33,7 @@ project-folder/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to run the project **locally** on your computer.
 
@@ -87,7 +87,7 @@ This ensures automatic reloads and smoother development.
 
 ---
 
-## 🧩 Customization Guide
+## Customization Guide
 
 You can easily personalize your profile card:
 
@@ -101,7 +101,7 @@ You can easily personalize your profile card:
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 The dynamic date display is handled using a small inline JavaScript script:
 ```javascript
@@ -112,7 +112,7 @@ This updates the date and timestamp when the page loads.
 
 ---
 
-## 🧱 Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |-------------|----------|
@@ -123,7 +123,7 @@ This updates the date and timestamp when the page loads.
 
 ---
 
-## 🧰 Best Practices Followed
+## Best Practices Followed
 
 - Semantic HTML for SEO and accessibility
 - Minimal inline styling
@@ -133,7 +133,7 @@ This updates the date and timestamp when the page loads.
 
 ---
 
-## 📸 Preview
+## Preview
 
 You can preview the card by opening:
 
@@ -155,7 +155,7 @@ Your browser should display something similar to this layout:
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 
 **Ayeni Phillip Adetunji**  
 Frontend Developer | Tech Enthusiast | Research & People-focused  
@@ -166,7 +166,7 @@ Frontend Developer | Tech Enthusiast | Research & People-focused
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, ideas, or suggestions are welcome!  
 If you'd like to improve this project:
@@ -184,11 +184,11 @@ You are free to use, modify, and distribute it as long as you give appropriate c
 
 ---
 
-## 🏁 Final Notes
+## Final Notes
 
 This project serves as a great **starter template** for building:
 - Personal portfolios
 - Developer introduction sections
 - Resume or bio pages
 
-Feel free to customize and build upon it! ✨
+Feel free to customize and build upon it!
